@@ -1,29 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Title of the document</title>
+  <title>Jack O'Shea</title>
   <link rel="stylesheet" href="normalize.css"/>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <div class="flex-col">
-  <div id="title-cover" class="cover row"> JACK O'SHEA </div>
-  <div class="cover blue row">
-    <span class="section-header">PROJECTS</span>
-    <div class="panel-container">
+  <div id="title-cover" class="cover row">
+    <ul id="navbar">
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#sec2">Design</a>
+      </li>
+      <li>
+        <a href="#sec3">Contact</a>
+      </li>
+    </ul>
+    <div id="main-title">JACK O'SHEA</div>
+   </div>
+
+  <a id="projects"/>
+  <div class="blue row">
+      <span class="section-header">About Me</span>
+      <div class="my-paragraph">
+      I'm a sophomore at Tufts University studying Computer Science and Applied Mathematics.
+      </div>
+  </div>
+
+  <a id="sec2">
+  <div class="red row">
+      <span class="section-header">PROJECTS</span>
+      <div class="panel-container">
+      <div class="panel">
+        <span class="panel-heading">Darien High School Schedule App</panel>
+        <hr>
+        <span class="panel-body">While in high school I made an iOS app for keeping track of our 8 day rotating block schedule. It automatically loaded the proper schedule for the day and even allows students to share schedules with parents. Unfortunately, I made the mistake of relying on the Parse backend service which was shut down by Facebook when I left for college.
+        </span>
+        <br/>
+        <span class="panel-body"><a href="AppPoster.png">View the poster</a></span>
+      </div>
+      <div class="panel">
+        <span class="panel-heading">Interactive Exhibits iOS App</panel>
+        <hr>
+        <span class="panel-body">I made an iOS app that leveraged iBeacons to display digital content relevant to the exhibit the user is looking at. I developed it with feedback from Barry Joseph, Associate for Digital Learning at AMNH. Read his account of the demo <a href="http://tinyurl.com/jacksmuseum">here</a> </span>
+        <br/>
+        <span class="panel-body>"><a href="Mor.png">View the promotional poster</a></span>
+      </div>
+      <div class="panel">
+        <span class="panel-heading">My first project listing</panel>
+        <hr>
+        <span class="panel-body">Panel body stuffs</span>
+      </div>      <div class="panel">Panel</div>
+      <div class="panel">Panel</div>
+    </div>
+  </div>
+
+  <a id="sec3">
+  <div class="green row">
+      <span class="section-header">PROJECTS</span>
+      <div class="panel-container">
       <div class="panel">
         <span class="panel-heading">My first project listing</panel>
         <hr>
         <span class="panel-body">Panel body stuffs</span>
       </div>
-      <div class="panel">Panel</div>
+      <div class="panel">
+        <span class="panel-heading">My first project listing</panel>
+        <hr>
+        <span class="panel-body">Panel body stuffs</span>
+      </div>      <div class="panel">Panel</div>
       <div class="panel">Panel</div>
     </div>
   </div>
-  <div class="cover red row"> Design </div>
-  <div class="cover green row"> Math </div>
-
 </body>
 
 </html>

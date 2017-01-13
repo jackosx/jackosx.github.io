@@ -1,5 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: white;
 }
 
 .flex-col {
@@ -11,19 +13,28 @@ body {
 .cover {
   height: 100vh;
   width: 100vw;
-  color: white;
-  padding: 20pt;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.row {
+  width: 100vw;
+  padding: 20px;
   box-sizing: border-box;
 }
 
 .panel {
-  width: 300pt;
-  height: 200pt;
+  width: 400px;
+  height: 300px;
   background-color: white;
   box-sizing: border-box;
-  padding: 14pt;
-  margin: 20pt;
+  padding: 14px;
+  margin: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0px 1px 3px 2px rgba(0,0,0,.15);
   color: #111111;
+  background-color: #ecf0f1;
 }
 
 .panel-container {
@@ -34,41 +45,83 @@ body {
 }
 
 hr {
-  margin-top: 10pt;
-  margin-bottom: 8pt;
+  margin-top: 8px;
+  margin-bottom: 6px;
 }
 
 .section-header {
+  padding: 20px;
   font-weight: bolder;
-  font-size: 32pt;
+  font-size: 3em;
 }
 
 .panel-heading {
   font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
 }
 
 .panel-body {
   font-family: 'Open Sans', sans-serif;
+  font-size: .75em;
+}
+
+.my-paragraph{
+  padding:50px;
+  font-size: 16px;
+  border
 }
 
 #title-cover {
   background-image: url("snowtisch.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.panel a {
+}
+
+#navbar {
+  display: flex;
+  font-size: 1em;
+  color: white;
+}
+
+#main-title {
   text-decoration: underline;
   text-align: center;
   vertical-align: middle;
-  line-height: 100vh;
-  font-size: 36pt;
+  line-height: 85vh;
+  font-size: 4em;
   font-family: 'Oswald', sans-serif;
 }
 
+ul {
+  padding: 0px;
+  margin-top: 0px;
+  list-style: none;
+}
+
+li {
+  margin: 12px;
+  border-width: thin;
+  border-color: white;
+}
+
+li a {
+  font-weight: light;
+  color: white;
+  text-decoration: none;
+}
+
 .blue {
-  background-color: lightblue;
+  background-color: #3498DB;
 }
 
 .red {
-  background-color: lightpink;
+  background-color: #FC575E;
 }
 
 .green {
