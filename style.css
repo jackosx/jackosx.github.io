@@ -1,0 +1,76 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cover {
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  padding: 20pt;
+  box-sizing: border-box;
+}
+
+.panel {
+  width: 300pt;
+  height: 200pt;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 14pt;
+  margin: 20pt;
+  color: #111111;
+}
+
+.panel-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+hr {
+  margin-top: 10pt;
+  margin-bottom: 8pt;
+}
+
+.section-header {
+  font-weight: bolder;
+  font-size: 32pt;
+}
+
+.panel-heading {
+  font-family: 'Oswald', sans-serif;
+}
+
+.panel-body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#title-cover {
+  background-image: url("snowtisch.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-decoration: underline;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100vh;
+  font-size: 36pt;
+  font-family: 'Oswald', sans-serif;
+}
+
+.blue {
+  background-color: lightblue;
+}
+
+.red {
+  background-color: lightpink;
+}
+
+.green {
+  background-color: lightgreen;
+}
