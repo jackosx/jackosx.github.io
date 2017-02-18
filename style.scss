@@ -1,0 +1,98 @@
+$darkGrey: #464646;
+@mixin mobile {
+    @media (max-width: 400px) {
+        @content;
+    }
+}
+
+body {
+    color: $darkGrey;
+    font-family: "American Typewriter";
+    font-size: 16px;
+}
+
+.row {
+    width: 100vw;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-header {
+    margin-bottom: .4em;
+    font-weight: 600;
+    font-size: 4em;
+}
+
+.paragraph {
+    line-height: 2.1em;
+}
+
+.skinny-content {
+    width: 450px;
+    max-width: 100%;
+}
+
+#name-svg{
+    margin-left: 70px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    max-width: 530px;
+    min-width: 270px;
+    @include mobile {
+        margin: 0px;
+    }
+}
+
+#title-container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;;
+}
+
+#nav-list {
+    margin-bottom: 50px;
+    margin-right: 55px;
+    font-family: "American Typewriter";
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-self: flex-end;
+
+    li {
+        margin-bottom: .6em;
+        padding: .6em;
+        transition: font-weight .75s easeOutBack;
+        box-sizing: con-box;
+
+        :hover {
+            font-weight: bolder;
+        }
+
+    }
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+    font-weight: inherit;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    @include mobile{
+        align-items: flex-start;;
+    }
+}
+
+#about-row {
+    background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=626262&density=90&opacity=6);
+    height: 100vh;
+}
