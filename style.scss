@@ -1,4 +1,4 @@
-$darkGray: #464646;
+$darkGray: #404040;
 $lightGray: #D8D8D8;
 $lightestGray: #F8F8F8;
 @mixin mobile {
@@ -52,10 +52,10 @@ body {
     $panelHeight: 260px !global;
     $panelRatio: .15 !global;
     height: $panelHeight;
-    width: 260px;
+    width: 270px;
     box-sizing: border-box;
     padding: 0px;
-    margin: 30px;
+    margin: 25px;
     overflow: hidden;
 
 
@@ -70,27 +70,28 @@ body {
     height: 100% * $panelRatio;
     padding: 5px;
     padding-left: 10px;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    font-weight: 600;
 }
 
 .panel-thumb {
     height: auto;
     width: 100%;
-
-    filter: saturate(0) brightness(1.5) contrast(10) opacity(.6);
+    background-color: $lightGray;
+    filter: saturate(0) brightness(1.5) contrast(10) brightness(.965) opacity(.75);
     transition: .25s filter;
 }
 .panel-thumb:hover {
-    filter: saturate(1)  brightness(1) contrast(1) opacity(1);
+    filter: saturate(1)  brightness(1) contrast(1) brightness(1) opacity(1);
 }
 
 .thumb-light {
-    filter: grayscale(1) contrast(.95);
-    transition: .5s filter;
+    filter: grayscale(1) invert(1) brightness(2) invert(1) brightness(.97);// s contrast(.9);
+    transition: 0s filter;
 
 }
 .thumb-light:hover {
-    filter: grayscale(0) contrast(1);
+    filter: grayscale(0) invert(0) brightness(1) invert(0) brightness(1);// s contrast(.9);
 }
 
 #name-svg{
