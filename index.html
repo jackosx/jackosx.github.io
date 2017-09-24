@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
     <title>Jack O'Shea</title>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="vex/js/vex.combined.min.js"></script>
+    <script>vex.defaultOptions.className = 'vex-theme-wireframe'</script>
+    <link rel="stylesheet" href="vex/css/vex.css" />
+
     <link rel="stylesheet" href="normalize.css"/>
     <link rel="stylesheet" href="style.min.css"/>
+
 </head>
 <body>
     <div id="main-container">
@@ -34,15 +42,18 @@
         <div id="about-row" class="row gray-grain">
             <div class="skinny-content">
                 <div class="section-header">about</div>
-                <div class="paragraph">Jack O'Shea is a student at Tufts University School of Engineering, majoring in computer science and applied mathematics. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut porttitor risus. Ut eleifend dolor nec dolor fringilla commodo. Integer efficitur, nulla sit amet rhoncus condimentum, nunc urna ultrices velit, eget vestibulum augue massa eu ligula. Nunc tincidunt lectus turpis, et euismod massa ultrices non.</div>
+                <div class="paragraph">I am a student at Tufts University School of Engineering, majoring in computer science and applied mathematics.
+                    I published my first attempt at programming on the iOS App Store in 8th grade. It was a dinky little game called "Falling." The objective was to guide a parachuter through the skies, by swiping left and right. The code was sub-par and full of memory leaks.
+                    Luckily, I've had a lot of time to learn between then and now. The purpose of this site is to show off some of my better projects.
+                </div>
             </div>
 
         </div>
         <div id="projects-row" class="row"> <a id="projects"></a>
             <div class="section-header">projects</div>
             <div class="panel-container">
-                <div class="panel">
-                    <div class="panel-heading">MOR Project</div>
+                <div id="mor-panel" class="panel" onClick="vex.dialog.open">
+                    <div class="panel-heading" >MOR Project</div>
                     <img class="panel-thumb" src="/OldVersions/FirstDraft/Mor.png">
                 </div>
                 <div class="panel">
@@ -66,6 +77,7 @@
             <div>github – <a href="//github.com/jackosx">github.com/jackosx</a>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
