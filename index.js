@@ -22,13 +22,13 @@ var schedulePanelContent = `<div class="panel-vex-content">
                            <div>Darien High School Schedule App</div>
                            <h5>"You're that App Kid right?"</h5>
                            <img src="/appthumb.png" align="right">
-                           <div>My high school had an 8-day "rotating" schedule. This means there were 8 distinct schedules, but the order of periods didn't follow a simple cyclical pattern, nor did they consistently fall on the same day of the week. This lead to a lot of headaches for freshmen – and some teachers too! A lot of people were setting pictures of their schedules as their phone's lock screen.
+                           <div>My high school had an 8-day "rotating" schedule. This means there were 8 distinct schedules, but the order of periods didn't follow a simple cyclical pattern, nor did they consistently fall on the same day of the week. This lead to a lot of headaches for freshmen – and some teachers too! Many people set pictures of their schedules as their phone's lock screen.
                            <br><br>
-                           I didn't want to change my wallpaper from the pretty picture of a lake I took, but I was also going through folded up paper copies of my schedule one forest at a time. One week I whipped up an "app" that was really just a tableview hard-coded with my own schedule.
+                           I didn't want to change my wallpaper from the pretty picture of a lake I took, but was also going through folded up paper copies of my schedule one forest at a time. One week I whipped up an "app" that was really just a tableview hard-coded with my own schedule.
                            <br><br>
-                           Other students saw me using the app and were asking me to make them one. Over the course of a couple months I improved my hacked together solution into a real, functioning, fully featured app. Students could enter their own schedule, view a map of the school, and even turn on notifications that would push their next class to the screen just as a period ended.
+                           Other students saw me using the app, and began asking me to make them one. Over the next several months I improved my hacked together solution into a real, functioning, fully-featured app. Students could enter their own schedule, view a map of the school, and even turn on notifications that would push their next class to the screen just as a period ended.
                            <br><br>
-                           The following year I released V2.0. I was using the Parse Backend to push the correct schedule of the 8-day rotation to user's phones. I could send out notifications for events such as school closings, users could even export and share their schedules with others! The backend also let me monitor usage. During my senior year 900 kids in a school of 1300 were using it daily.
+                           The following year I released V2.0. I was using the Parse Backend to push the correct schedule of the 8-day rotation to users' phones. I could send out notifications for events such as school closings, users could even export and share their schedules with others! The backend also let me monitor usage. During my senior year, 900 kids in a school of 1300 were using it daily.
                            <br><br>
                            Unfortunately, Facebook acquired Parse some years ago, and <a href="https://techcrunch.com/2017/01/30/facebooks-parse-developer-platform-is-shutting-down-today/">announced its shutdown</a> while I was in my freshmen year of college. The app has since fallen to the wayside, but now my sister is starting high school and I hope to resurrect it for her later this year.
                            </div>
@@ -38,9 +38,9 @@ var myRoomPanelContent = `<div class="panel-vex-content">
                       <div>My Room</div>
                       <h5>The World's Coolest FFT Visualization</h5>
                       <img src="/tapestryfft.gif" align="right">
-                      <div>Using a Raspberry Pi, cheap projector, and OpenFrameworks, I created a C++ program that lights up different components of a 9x8' tapestry on my wall.
+                      <div>Using a Raspberry Pi, cheap projector, and OpenFrameworks, I created a C++ program that lights up different components of a 9x8' tapestry on my wall in response to music.
                       <br><br>
-                      Adobe Illustrator's Live Trace feature is used to turn an image of the tapestry into an SVG, from which I can select certain components to light up. An OpenFrameworks app runnning on the Raspberry Pi performs FFT on mic input and maps the amplitude of each frequency band to the intensity with which a given SVG component is projected.
+                      Adobe Illustrator's Live Trace feature is used to turn an image of the tapestry into an SVG, from which I can select certain components to light up. An OpenFrameworks app runnning on the Raspberry Pi performs FFT on mic input, and maps the amplitude of each frequency band to the intensity with which a given SVG component is projected.
                       <br><br> There are also LED Strips on the wall that draw a more traditional FFT visualization. They're directly controlled via some Arduinos and a separate daemon I wrote for the Pi that communicates with them.
                       <br><br>As a bonus I wrote a <a href="https://github.com/nfarina/homebridge">homebridge</a> plugin for my protocol that lets me control the lights via Siri when music isn't playing.
                       </div>
