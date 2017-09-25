@@ -99,8 +99,11 @@ a {
     flex-direction: column;
     justify-content: space-between;
     img {
-        height: 200px;
-        width: auto;
+        width: 40%;
+        height: auto;
+        align-self: right;
+        padding-left: 1em;
+        padding-bottom: 1em;
     }
     a {
         text-decoration: underline;
