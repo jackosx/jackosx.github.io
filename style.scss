@@ -1,3 +1,5 @@
+@import 'vex/css/vex-theme-wireframe.css';
+
 $darkGray: #404040;
 $lightGray: #D8D8D8;
 $lightestGray: #F8F8F8;
@@ -11,6 +13,12 @@ body {
     color: $darkGray;
     font-family: "American Typewriter";
     font-size: 16px;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+    font-weight: inherit;
 }
 
 .row {
@@ -58,10 +66,10 @@ body {
     margin: 25px;
     overflow: hidden;
 
-
     background-color: $lightestGray;
 
     flex-grow: 0.1;
+
 }
 
 .panel-heading {
@@ -83,6 +91,20 @@ body {
 }
 .panel-thumb:hover {
     filter: saturate(1)  brightness(1) contrast(1) brightness(1) opacity(1);
+}
+
+.vex-content {
+    // height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img {
+        height: 200px;
+        width: auto;
+    }
+    a {
+        text-decoration: underline;
+    }
 }
 
 .thumb-light {
@@ -139,11 +161,6 @@ body {
     }
 }
 
-a {
-    text-decoration: inherit;
-    color: inherit;
-    font-weight: inherit;
-}
 
 #main-container {
     display: flex;
@@ -176,4 +193,9 @@ a {
 
 .gray-grain {
      background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=626262&density=90&opacity=6);
+ }
+
+  .vex-content {
+      padding: 1em;
+      width: 100vw;
  }
