@@ -34,7 +34,20 @@ var schedulePanelContent = `<div class="panel-vex-content">
                            </div>
                        </div>`;
 
+var myRoomPanelContent = `<div class="panel-vex-content">
+                      <div>My Room</div>
+                      <h5>The World's Coolest FFT Visualization</h5>
+                      <img src="/tapestryfft.gif" align="right">
+                      <div>Using a Raspberry Pi, cheap projector, and OpenFrameworks, I created a C++ program that lights up different components of a 9x8' tapestry on my wall.
+                      <br><br>
+                      Adobe Illustrator's Live Trace feature is used to turn an image of the tapestry into an SVG, from which I can select certain components to light up. An OpenFrameworks app runnning on the Raspberry Pi performs FFT on mic input and maps the amplitude of each frequency band to the intensity with which a given SVG component is projected.
+                      <br><br> There are also LED Strips on the wall that draw a more traditional FFT visualization. They're directly controlled via some Arduinos and a separate daemon I wrote for the Pi that communicates with them.
+                      <br><br>As a bonus I wrote a <a href="https://github.com/nfarina/homebridge">homebridge</a> plugin for my protocol that lets me control the lights via Siri when music isn't playing.
+                      </div>
+                  </div>`;
+
 var panelContent = {
     'mor-panel' : morPanelContent,
-    'schedule-app-panel' : schedulePanelContent
+    'schedule-app-panel' : schedulePanelContent,
+    "my-room-panel" : myRoomPanelContent
 };
