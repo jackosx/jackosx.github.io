@@ -46,8 +46,23 @@ var myRoomPanelContent = `<div class="panel-vex-content">
                       </div>
                   </div>`;
 
+var remoteUIPanelContent = `<div class="panel-vex-content">
+                      <div>ofxRemoteUI Web Interface</div>
+                      <h5>Extended the ofxRemoteUI OpenFrameworks Addon</h5>
+                      <img src="https://raw.githubusercontent.com/jackosx/ofxRemoteUI-Web/master/screenshots/screen-med.png" align="right">
+                      <div>OpenFrameworks is a self-described "<a href="http://openframeworks.cc">open source C++ toolkit for creative coding.</a>"
+                      Developers have created an ecosystem of open source "ofxAddons" that provide new features or wrap existing libraries, all following consistent conventions.
+                      <br><br>
+                      Oriol Ferrer Mesià created <a href="https://github.com/armadillu/ofxRemoteUI">ofxRemoteUI</a>, an addon that lets you serve a program's variables (bools, floats, colors, and others)
+                      on the local network for live tweaking via a GUI.  Previously, there were only native iOS and macOS clients, which communicated with the host machine via OSC.
+                      I created <a href="https://github.com/jackosx/ofxRemoteUI-Web">a web interface</a> for the addon (using dat.GUI for the actual control components) and extended the server to allow WebSocket connections. Now, any device with a browser can be used
+                      as a controller for ofxRemoteUI.
+                      </div>
+                  </div>`;
+
 var panelContent = {
     'mor-panel' : morPanelContent,
     'schedule-app-panel' : schedulePanelContent,
-    "my-room-panel" : myRoomPanelContent
+    "my-room-panel" : myRoomPanelContent,
+    "remote-ui-panel": remoteUIPanelContent
 };
