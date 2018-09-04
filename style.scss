@@ -1,4 +1,8 @@
 @import 'vex/css/vex-theme-wireframe.css';
+@import url('https://fonts.googleapis.com/css?family=Copse');
+
+$fallbackfont: 'Copse';
+$fontlist: "American Typewriter" , $fallbackfont;
 
 $darkGray: #404040;
 $lightGray: #D8D8D8;
@@ -11,7 +15,7 @@ $lightestGray: #F8F8F8;
 
 body {
     color: $darkGray;
-    font-family: "American Typewriter";
+    font-family: $fontlist;
     font-size: 16px;
 }
 
@@ -120,6 +124,7 @@ a {
 }
 
 #name-svg{
+    width: 75vw;
     margin-left: 70px;
     margin-top: 0px;
     margin-right: 0px;
@@ -144,7 +149,7 @@ a {
 #nav-list {
     margin-bottom: 50px;
     margin-right: 55px;
-    font-family: "American Typewriter";
+    font-family: $fontlist;
     text-align: right;
     display: flex;
     flex-direction: column;
